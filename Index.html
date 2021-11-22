@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMROOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script> 
+      $(function(){
+        $("#header").load("pages/header.html"); 
+      });
+      $(function(){
+        $("#footer").load("pages/footer.html");
+      });
+      </script> 
+
+</head>
+<body>
+
+  <div class="container">
+    <div id="header">
+    </div>
+    <div class="cover">
+      <p class="first">EXAMROOM</p><br>
+      <p class="second">One Destination for all Self Learner  </p>
+
+    </div>
+    <div class="sectionImg" id="Login">
+        <img src="homeImg2.jpg" alt="wait" width="100%" height="400px">
+        <button class="loginbtn"><a href="loginpage.html" class="loginImg">Login/SignUp</a></button>
+    </div>
+
+    <div class="note">
+      <p>Get notified with all the trends and changes in the Self Learner Community</p>
+    </div>
+    
+    <div id="slideshow-container">
+
+        <div class="mySlides fade">
+           
+          <div class="numbertext">1 / 4</div>
+          <img src="https://media.istockphoto.com/photos/code-programming-for-website-editors-view-picture-id1290492381?b=1&k=20&m=1290492381&s=170667a&w=0&h=NQSXJKhncCP1GLzDkD8KPZsCOh1wldDj5RZbPVJztxQ=">
+         <div class="text">Register Yourself and Learn</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="https://media.istockphoto.com/photos/a-medical-exam-conducted-at-india-in-wooden-block-leters-on-table-picture-id1170737999?b=1&k=20&m=1170737999&s=170667a&w=0&h=O01bBwLedo03ZNBtCEa9zgug9_yRRWES7C7wqlV8cM4=">
+          <div class="text">NEET</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://media.istockphoto.com/photos/concept-of-jee-exam-conducted-in-india-for-recruitment-in-wooden-picture-id1171159651?b=1&k=20&m=1171159651&s=170667a&w=0&h=B-FyYDfGr5neN3-3UpDmjeuWrWu-6Brk5rbuQAx8j5E=">
+          <div class="text">JEE</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://media.istockphoto.com/photos/abstract-digital-network-communication-picture-id888477728?b=1&k=20&m=888477728&s=170667a&w=0&h=ZX15pWkxepMHlk0pg4EMwBiobixDCNmGd-FgDCGf7p8=">
+          <div class="text">Programming</div>
+        </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 4 seconds
+            }
+        
+        
+            
+           
+            
+        </script>
+        <!-- <h1>Latest News</h1> -->
+        <div id = "Latest-news" style="display: none;">
+          
+          <div class = "news">
+              <img src = "./images/ipl-2020-final-mi-vs-dc.jpg"/>
+              <p>The Times Of India</p><br>
+              <a href = "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2021-qualifier-1-dc-vs-csk-playoffs-completely-different-our-tournament-starts-now-says-ricky-ponting/articleshow/86893245.cms ">Loss against RCB chance for players to REFLECT: Ricky Pointing</a>
+
+          </div>
+          <div class="news" >
+            <img src= "images/Screenshot (87).png"/>
+            <p>BBC</p><br/>
+            <a href= "https://www.bbc.com/sport/football/58855831">Premier League: Saudi Arabia-backed Newcastle takeover complained about by other clubs</a>
+
+          </div>
+          <div class = "news" >
+              <img src= "images/86877598.jpg"/>
+              <p>The Times Of India</p><br/>
+              <a href= "http://timesofindia.indiatimes.com/articleshow/86877613.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Indian hockey scientific advisors' Robin Arkell, Wayne Lomba ..</a>
+          </div>
+          <div class = "news" >
+            <img src= "images/000_18N6HR_1200x768.webp"/>
+            <p>The Times Of India</p><br/>
+            <a href= "https://www.indiatoday.in/sports/other-sports/story/india-clinch-2-bronze-medals-in-men-s-doubles-asian-table-tennis-championship-1860697-2021-10-04">Asian Table Tennis Championship: India finish campaign with 2 men's doubles bronze medals</a>
+        </div>
+          </div>
+
+        </div>
+        <div class="aboutUs" id="About">
+            <h1 style="text-align: center;color: black;">Why ExamRoom ?</h1>
+            <p style="text-align: center;"> We provide a web application to user through which examiners/admin can conduct online examinations and students can attempt those examinations.
+                 Admin can add examination on a date of their interest and enter an objective-type question-answers along with the correct answers. 
+                 Students need to enroll and give the examination. 
+                 Each question needs to be attempted in a maximum specific time-limit set by the examiner.
+                 After submitting, the students will be able to review their submissions and check the results.</p>
+        </div>
+        <br>
+    <hr>
+    <br>
+    <div class="examSection">
+        <h1 style=" margin-left: 50px; font-size: 45px; color:black" >EXAMS :</h1>
+        <div class="cardSection" style=" margin-left: 9%;">
+            <div class="image" id="cards">
+                <img class="image_img" src="https://media.istockphoto.com/photos/concept-of-gre-exam-in-wooden-block-letters-on-table-picture-id1171161902?b=1&k=20&m=1171161902&s=170667a&w=0&h=b81JPIfUpzRnVe6FXOCxFK20m7hJplcafPYXkApQlTI=" alt="Sorry">
+                <div class="image_overlay">
+                    <div class="image_title">
+                        GRE
+                    </div>
+                    <a href="#">
+                        <button class="GetIn">View More</button>
+                    </a>
+                </div>
+            </div>
+            <div class="image">
+                <img class="image_img" src="https://media.istockphoto.com/photos/setting-the-page-on-fire-with-some-hard-work-picture-id492198113?b=1&k=20&m=492198113&s=170667a&w=0&h=CBWxkL9fuZlpUKhnYVsWzcuGGrXiYTs7kxYgOlsSUoY=" alt="Sorry">
+                <div class="image_overlay">
+                    <div class="image_title">
+                        Apptitude
+                    </div>
+                    <a href="#">
+                        <button id="GetIn">View More</button>
+                    </a>
+                </div>
+            </div>
+            <div class="image">
+                <img class="image_img" src="https://media.istockphoto.com/photos/innovation-and-new-ideas-lightbulb-concept-with-question-mark-picture-id1279690557?b=1&k=20&m=1279690557&s=170667a&w=0&h=BnH7EPIgwwpPyKMfeBJr87Ql900NFKjLYknrzvfi3Dw=" alt="Sorry">
+                <div class="image_overlay">
+                    <div class="image_title">
+                        Custom Exam
+                    </div>
+                    <a href="#">
+                        <button id="GetIn">View More</button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+        <div id = "footer" id="Contact"></div>
+        <!--kinjal code-->
+        <div class="footer" >
+            <div class="footer-content">
+                <div class="footer-section about1">
+                    <h1 class="logo-text"><span>Exam</span>Room</h1>
+                    <br>
+                    <p>
+                        Lets Learn Together and Grow Together!!
+                    </p>
+                    <br>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; 808-104-4632</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; kinjal.varshney_cs19@gla.ac.in</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook" style="color: rgb(81, 112, 211);"></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: rgb(245, 117, 138);"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: rgb(39, 133, 240);"></i></a>
+                        <a href="#"><i class="fab fa-youtube" style="color: red;"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul>
+                        <a href="#Home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#About">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>Terms</li>
+                        </a>
+                        <a href="#">
+                            <li>Privacy</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input"
+                            placeholder="Your email address...">
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                        <button type="submit" class="btn btn-big contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            send
+                        </button>
+                    </form>
+                </div>
+            </div>
+  
+            <div class="footer-bottom">
+                &copy; EXAMROOM | Designed by AKKS
+            </div>
+
+        <!--kinjal code-->
+        </div>
+        
+</body>
+</html>
