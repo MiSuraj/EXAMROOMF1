@@ -15,9 +15,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
     <script> 
-      $(function(){
-        $("#header").load("pages/header.html"); 
-      });
+    function linkjs() {
+        window.location = "http://localhost:4200/"
+}
+        
+      
       $(function(){
         $("#footer").load("pages/footer.html");
       });
@@ -30,13 +32,10 @@
     <div id="header">
     </div>
     <div class="cover">
+        <button onclick="linkjs()" style="background-color: Transparent;">
       <p class="first">EXAMROOM</p><br>
       <p class="second">One Destination for all Self Learner  </p>
-
-    </div>
-    <div class="sectionImg" id="Login">
-        <img src="homeImg2.jpg" alt="wait" width="100%" height="400px">
-        <button class="loginbtn"><a href="loginpage.html" class="loginImg">Login/SignUp</a></button>
+ </button>
     </div>
 
     <div class="note">
@@ -104,6 +103,7 @@
             
         </script>
        
+
         </div>
         <div class="aboutUs" id="About">
             <h1 style="text-align: center;color: black;">Why ExamRoom ?</h1>
@@ -158,7 +158,8 @@
     <br>
     <br>
     <hr>
-        <div id = "footer" id="Contact"></div>
+    <div class="container">
+        <div  id = "footer" id="Contact"></div>
         <!--kinjal code-->
         <div class="footer" >
             <div class="footer-content">
@@ -219,6 +220,7 @@
 
         <!--kinjal code-->
         </div>
-      
+    </div>
+        
 </body>
 </html>
