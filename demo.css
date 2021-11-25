@@ -1,15 +1,50 @@
 *{padding: 0; margin:0;box-sizing: border-box;font-family: arial;}
-        
- body 
- { height: 100%;
-    
-    width: 100%;
-    background-image: linear-gradient(to right, #499b90, lightblue);
-    background-repeat: no-repeat;
+body 
+{ height: 100%;
+   
+   width: 100%;
+   background-image: linear-gradient(to right, #499b90, lightblue);
+   background-repeat: no-repeat;
 
-  
-
+ 
 }
+nav{
+  font-family: 'Ubuntu', sans-serif;
+}
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+position: fixed;
+  width: 100%;
+}
+
+#navul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 80px;
+  background-color: White;
+  
+  color: Black;
+}
+
+
+nav ul li{
+  padding: 0 12px;
+}
+.brand img{
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+
 
         .mySlides {display: none; }
         img {vertical-align: middle;}
